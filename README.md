@@ -3,7 +3,7 @@
 
 ## Preview
 
-![Car Catalog](assets/Demo.png)
+![Car Catalog](assets/Demo.gif)
 
 ## Development
 
@@ -18,8 +18,8 @@
 1. Clone the repository.
 
     ```shell
-    git clone https://github.com/tghaffari/carCatalog
-    cd carCatalog
+    git clone https://github.com/tghaffari/carCatalogv2
+    cd carCatalogv2
     ```
 
 3. Install all dependencies with NPM.

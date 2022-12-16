@@ -47,3 +47,102 @@
 .table-row:nth-of-type(even) {
   background-color: rgb(231, 231, 231);
 }
+
+.add-button {
+  margin-top: 1rem;
+  padding: 0.7rem 0.5rem;
+  background-color: rgb(147, 199, 181);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  border-radius: 2px;
+}
+
+.modal-background {
+  background-color: rgba(0 0 0/ 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+}
+
+.modal-window {
+  border: none;
+  background-color: #f2e7e2;
+  width: 90%;
+  height: 30rem;
+}
+
+.modal-exit {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  font-size: 1rem;
+  color: rgb(9, 96, 66);
+}
+
+.modal-padding {
+  padding: 1rem 3rem;
+}
+
+.add-car-heading {
+  font-family: Inter, sans-serif;
+  color: rgb(9, 96, 66);
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+label {
+  font-family: Inter, sans-serif;
+  color: rgb(9, 96, 66);
+  display: inline-block;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 25px;
+  border-radius: 2px;
+  margin-top: 0.2rem;
+  border: solid rgba(172, 211, 197) 1px;
+}
+
+.save-button {
+  border-radius: 2px;
+  padding: 0.5rem 0.8rem;
+  background-color: rgb(147, 199, 181);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+}
+
+.text-align-end {
+  text-align: end;
+}
+
+input:focus {
+  outline: none;
+  border-color: aquamarine;
+}
+
+.add-button:hover,
+.modal-exit:hover,
+.save-button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-window {
+    border: none;
+    background-color: #f2e7e2;
+    width: 40%;
+    height: 30rem;
+  }
+}
