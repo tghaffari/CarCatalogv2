@@ -1,4 +1,5 @@
 import React from 'react';
+import AddCarModal from '../components/add-car-modal';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ export default class Home extends React.Component {
 
     this.getCars = this.getCars.bind(this);
     this.handleButtonClick = this.handleButtonClick.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   getCars() {
@@ -24,7 +26,15 @@ export default class Home extends React.Component {
     this.setState({ showModal: true });
   }
 
+  closeModal() {
+    this.setState({ showModal: false });
+  }
+
   componentDidMount() {
+    this.getCars();
+  }
+
+  componentDidUpdate() {
     this.getCars();
   }
 
@@ -60,6 +70,7 @@ export default class Home extends React.Component {
           </tbody>
         </table>
         <button className="add-button" onClick={this.handleButtonClick}>Add New Entry</button>
+        {this.state.showModal && <AddCarModal closeModal={this.closeModal} /> }
       </>
     );
   }
