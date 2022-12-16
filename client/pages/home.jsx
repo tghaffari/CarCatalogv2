@@ -4,9 +4,12 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cars: null
+      cars: null,
+      showModal: false
     };
+
     this.getCars = this.getCars.bind(this);
+    this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
   getCars() {
@@ -15,6 +18,10 @@ export default class Home extends React.Component {
       .then(cars => {
         this.setState({ cars });
       });
+  }
+
+  handleButtonClick() {
+    this.setState({ showModal: true });
   }
 
   componentDidMount() {
@@ -52,6 +59,7 @@ export default class Home extends React.Component {
             {tableBody}
           </tbody>
         </table>
+        <button className="add-button" onClick={this.handleButtonClick}>Add New Entry</button>
       </>
     );
   }

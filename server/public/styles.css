@@ -47,3 +47,17 @@
 .table-row:nth-of-type(even) {
   background-color: rgb(231, 231, 231);
 }
+
+.add-button {
+  margin-top: 1rem;
+  padding: 0.7rem 0.5rem;
+  background-color: rgb(147, 199, 181);
+  border: none;
+  color: whitesmoke;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+}
+
+.add-button:hover {
+  cursor: pointer;
+}
