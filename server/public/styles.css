@@ -1,0 +1,49 @@
+.background {
+  background-color: rgb(246, 239, 231);
+}
+
+.title {
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  margin: 4rem 0 0.2rem;
+  font-size: 2.5rem;
+  color: rgb(9, 96, 66);
+}
+
+.line {
+  height: 1.7px;
+  background: black;
+  margin: 0 0 1rem;
+  background-color: rgb(9, 96, 66);
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  font-family: Inter, sans-serif;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.header-styling {
+  width: 25%;
+  font-weight: bold;
+  background-color: rgb(147, 199, 181);
+  padding: 0.8rem;
+  color: rgb(255, 255, 255);
+}
+
+.table-body,
+.table-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-data {
+  padding: 0.8rem;
+}
+
+.table-row:nth-of-type(even) {
+  background-color: rgb(231, 231, 231);
+}
